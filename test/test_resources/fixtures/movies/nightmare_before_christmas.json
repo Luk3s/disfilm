@@ -1,0 +1,20 @@
+{
+  "popularity": 17.748,
+  "id": 9479,
+  "video": false,
+  "vote_count": 5198,
+  "vote_average": 7.8,
+  "title": "The Nightmare Before Christmas",
+  "release_date": "1993-10-09",
+  "original_language": "en",
+  "original_title": "The Nightmare Before Christmas",
+  "genre_ids": [
+    14,
+    16,
+    10751
+  ],
+  "backdrop_path": "/16lk65YfrDFIr6evkWRjSeOOSws.jpg",
+  "adult": false,
+  "overview": "Tired of scaring humans every October 31 with the same old bag of tricks, Jack Skellington, the spindly king of Halloween Town, kidnaps Santa Claus and plans to deliver shrunken heads and other ghoulish gifts to children on Christmas morning. But as Christmas approaches, Jack's rag-doll girlfriend, Sally, tries to foil his misguided plans.",
+  "poster_path": "/6oxkO1VgKCq74fNILKAg6t2dVEt.jpg"
+}

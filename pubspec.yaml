@@ -1,0 +1,38 @@
+name: disfilm
+description: Discover films to watch
+
+version: 0.0.1
+
+environment:
+  sdk: ">=2.5.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  built_collection: ^4.2.2
+  built_value: ^6.8.2
+  dartz: ^0.8.9
+  flutter_image: ^2.0.0
+  flutter_spinkit: ^4.1.1+1
+  font_awesome_flutter: ^8.5.0
+  intl: ^0.15.8
+  percent_indicator: ^2.1.1+1
+  provider: ^3.2.0
+  recase: ^2.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^1.7.0
+  built_value_generator: ^6.8.2
+  mockito: ^4.1.1
+  path: ^1.6.4
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/popular_movies.jpg
+    - assets/images/top_movies.jpg
+    - assets/images/upcoming_movies.jpg
+    - assets/images/loading_movie.jpg
