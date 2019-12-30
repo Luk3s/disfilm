@@ -26,12 +26,20 @@ Future<void> showKeywordsDialog({
               _KeywordDialogOption(
                 notifier: keywordChangeNotifier,
                 isFirst: true,
+                onTap: () {
+                  keywordChangeNotifier.clear();
+                  Navigator.of(context).pop();
+                },
               ),
               for (Keyword keyword in Keyword.values) ...[
                 _KeywordDialogOption(
                   keyword: keyword,
                   notifier: keywordChangeNotifier,
                   isLast: Keyword.values.last == keyword,
+                  onTap: () {
+                    keywordChangeNotifier.keyword = keyword;
+                    Navigator.of(context).pop();
+                  },
                 ),
                 if (Keyword.values.last != keyword) Divider(height: 0)
               ]
@@ -46,17 +54,20 @@ Future<void> showKeywordsDialog({
 class _KeywordDialogOption extends StatelessWidget {
   const _KeywordDialogOption({
     @required this.notifier,
+    @required this.onTap,
     this.keyword,
     this.isFirst = false,
     this.isLast = false,
     Key key,
   })  : assert(notifier != null),
+        assert(onTap != null),
         assert(isFirst != null),
         assert(isLast != null),
         super(key: key);
 
-  final Keyword keyword;
   final KeywordChangeNotifier notifier;
+  final VoidCallback onTap;
+  final Keyword keyword;
   final bool isFirst;
   final bool isLast;
 
@@ -75,7 +86,7 @@ class _KeywordDialogOption extends StatelessWidget {
           color: Colors.white,
         ),
         title: Text(
-          keyword == null ? 'Reset' : keyword.description,
+          keyword == null ? 'Default' : keyword.description,
           style: TextStyle(
             color: Colors.white,
           ),
@@ -90,15 +101,7 @@ class _KeywordDialogOption extends StatelessWidget {
     if (keyword != notifier.keyword) {
       dialogOption = InkWell(
         borderRadius: _borderRadius,
-        onTap: () {
-          Navigator.of(context).pop();
-
-          if (keyword == null) {
-            notifier.clear();
-          } else {
-            notifier.keyword = keyword;
-          }
-        },
+        onTap: onTap,
         child: dialogOption,
       );
     }

@@ -6,8 +6,10 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class KeywordIndicator extends StatelessWidget {
-  const KeywordIndicator({@required this.keywordChangeNotifier, Key key})
-      : assert(keywordChangeNotifier != null),
+  const KeywordIndicator({
+    @required this.keywordChangeNotifier,
+    Key key,
+  })  : assert(keywordChangeNotifier != null),
         super(key: key);
 
   final KeywordChangeNotifier keywordChangeNotifier;

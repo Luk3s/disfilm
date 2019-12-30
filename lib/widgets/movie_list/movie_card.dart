@@ -28,7 +28,7 @@ class MovieCard extends StatelessWidget {
           Radius.circular(12),
         ),
       ),
-      clipBehavior: Clip.hardEdge,
+      clipBehavior: Clip.antiAliasWithSaveLayer,
       child: Stack(
         children: <Widget>[
           if (movie.backdropPath != null)

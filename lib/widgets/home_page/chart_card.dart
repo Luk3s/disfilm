@@ -24,13 +24,13 @@ class ChartCard extends StatelessWidget {
           Radius.circular(12),
         ),
       ),
-      clipBehavior: Clip.hardEdge,
+      clipBehavior: Clip.antiAliasWithSaveLayer,
       child: Material(
         child: Ink.image(
           image: AssetImage(coverImagePath),
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height / 4,
-          fit: BoxFit.fill,
+          fit: BoxFit.cover,
           child: InkWell(
             onTap: onTap,
             child: Align(
