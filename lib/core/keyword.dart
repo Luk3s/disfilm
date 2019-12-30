@@ -16,7 +16,7 @@ class Keyword {
         description = 'Anime';
 
   const Keyword.spy()
-      : value = 9715,
+      : value = 470,
         description = 'Spy';
 
   static final values = BuiltList<Keyword>(<Keyword>[
