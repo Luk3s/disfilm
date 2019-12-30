@@ -3,12 +3,11 @@ import 'package:disfilm/change_notifiers/movie_chart_change_notifier.dart';
 import 'package:disfilm/core/app_config.dart';
 import 'package:disfilm/core/dependency_squirrel.dart' as ds;
 import 'package:disfilm/core/status.dart';
+import 'package:disfilm/widgets/keyword_indicator.dart';
 import 'package:disfilm/widgets/movie_list/movie_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
-import '../keyword_indicator.dart';
 
 class PopularMoviesScreen extends StatelessWidget {
   const PopularMoviesScreen({

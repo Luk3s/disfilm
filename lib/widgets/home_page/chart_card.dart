@@ -29,7 +29,7 @@ class ChartCard extends StatelessWidget {
         child: Ink.image(
           image: AssetImage(coverImagePath),
           width: MediaQuery.of(context).size.width,
-          height: MediaQuery.of(context).size.height / 4,
+          height: MediaQuery.of(context).size.height / 3.8,
           fit: BoxFit.cover,
           child: InkWell(
             onTap: onTap,
