@@ -12,7 +12,7 @@ dependencies:
   built_collection: ^4.2.2
   built_value: ^6.8.2
   dartz: ^0.8.9
-  flutter_image: ^2.0.0
+  flutter_image: ^3.0.0
   flutter_spinkit: ^4.1.1+1
   font_awesome_flutter: ^8.5.0
   intl: ^0.15.8
